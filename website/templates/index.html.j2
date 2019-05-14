@@ -1,0 +1,29 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="static/index.css">
+</head>
+<body>
+
+{% if img_url %}
+<div class='main_movie'>
+    <h1>{{title}}</h1><br>
+    <img src='{{img_url}}' class='main_image'/>
+    <br><br>
+    <div class='genres'>
+    {% for genre in genres %}
+        <div>{{genre}}</div>
+    {% endfor %}
+    </div>
+    <div class='year'>{{year}}</div>
+</div>
+{% endif %}
+
+<div class='container'>
+    {% for movie in movies %}
+    <a href="/{{movie[0]}}">
+        <img src='/static/images/{{movie[1]}}' class='reco_image'/>
+    </a>
+    {% endfor %}
+</div>
+</body>
+</html>

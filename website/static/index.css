@@ -1,0 +1,70 @@
+
+body{
+    background-color: RGB(35,35,35);
+    color: lightgrey;
+    font-family: 'Consolas';
+    font-size: 13px;
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.main_movie{
+	border: 1px solid lightgrey;
+	margin: 20px;
+	text-align: center;
+	padding: 10px;
+	width: 200px;
+	box-sizing: border-box;
+}
+.main_image{
+    width: 150px;
+    height: auto;
+}
+.main_movie h1{
+	font-size: 1.5em;
+	margin: 0;
+}
+.container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid lightgrey;
+	margin: auto;
+	width: calc(100% - 300px);
+	box-sizing: border-box;
+
+	overflow-y: auto;
+}
+.container > a{
+	width: 100px;
+    height: auto;    
+    margin: 20px;
+}
+.reco_image{
+	width: 100px;
+    height: auto;
+    transition: 1s;
+    cursor: pointer;
+}
+.reco_image:hover{
+	transform: scale(1.2);
+
+}
+.genres{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.genres div{
+	border: 1px solid lightgrey;
+	border-radius: 3px;
+	display: block;
+	padding: 2px 5px;
+	margin: 5px;
+}

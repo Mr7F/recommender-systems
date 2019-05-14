@@ -1,0 +1,25 @@
+
+database:
+    user: python_user
+    password: S3cR37_p@ss0WrD_r@d0|/|
+    dbname: Recommendations
+    ratings_table:
+        name: Ratings
+        id_user: id_user
+        id_item: id_movie
+        rating: rating
+        timestamp: timestamp
+    users_table:
+        name: Users
+        id_user: id_user
+    items_table:
+        name: Movies
+        id_item: id_movie
+    recommendations_table:
+        name: Recommendations
+        id_item: id_movie
+        id_reco: id_recom
+        position: position
+algorithm:
+    name: Autoencoders
+    recommendations: 20
